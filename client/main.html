@@ -1,0 +1,32 @@
+<head>
+  <title>Hangman</title>
+</head>
+
+
+
+<template name="game">
+  <form class="newGame">
+    <input type="text" id="word"/>
+    <input type="submit" value = "New Game"/>
+  </form>
+
+  {{> gameInput}}
+
+  {{#each game}}
+    <h1> Word Progress:</h1>
+    <h2>{{wordProg}}</h2>
+
+    <h1> Wrong Characters</h1>
+    <h2>{{invalidChars}}</h2>
+  {{/each}}
+
+
+</template>
+
+<template name="gameInput">
+  <form class="enterChar">
+    <input type="text" id="char" />
+    <input type="submit" value="Enter character">
+    <span id="message"></span>
+  </form>
+</template>
