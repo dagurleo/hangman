@@ -2,9 +2,9 @@
   <title>Hangman</title>
 </head>
 
-
-
 <template name="game">
+<div id="container">
+<h1 class="header">Hangman</h1>
   <form class="newGame">
     <input type="text" id="word"/>
     <input type="submit" value = "New Game"/>
@@ -13,14 +13,16 @@
   {{> gameInput}}
 
   {{#each game}}
+  <div class="lettercontainer">
     <h1> Word Progress:</h1>
     <h2>{{wordProg}}</h2>
-
+  </div>
+  <div class="lettercontainer">
     <h1> Wrong Characters</h1>
     <h2>{{invalidChars}}</h2>
+  </div>
   {{/each}}
-
-
+</div>
 </template>
 
 <template name="gameInput">

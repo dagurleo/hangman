@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+p, h1, h2, input
+{
+	font-family: 'Lato', sans-serif;
+}
+
+#container
+{
+	.header
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	width: 30%;
+	min-width: 400px;
+	max-width: 600px;
+
+	margin: 0 auto;
+
+	.newGame, .enterChar
+	{
+		height: 35px;
+		input
+		{
+			padding: 5px;
+			width: 30%;
+			float: right;
+
+			&:nth-child(1)
+			{
+				float: left;
+				width: 65%;
+			}
+		}
+	}
+}
+
+.lettercontainer
+{
+	padding: 10px;
+	background-color: rgba(black, 0.1);
+	h2
+	{
+		letter-spacing: 10px;
+	}
+}
